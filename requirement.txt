@@ -1,0 +1,10 @@
+To create your envirounment 
+    python -m venv myenv
+Set the scope and execution policies (on Windows) 
+    Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+Activate the envirounment 
+    myenv\Scripts\Activate
+Run the Waitress
+    waitress-serve --host=127.0.0.1 --port=8000 main:app
+To deactivate type
+    deactivate
